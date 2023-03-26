@@ -9,3 +9,6 @@ natives/*
 .minecraft/saves
 .minecraft/logs
 .minecraft/screenshots
+
+.minecraft/config/byg/backups/*.zip
+.minecraft/config/minihud
