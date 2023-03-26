@@ -12,3 +12,6 @@ natives/*
 
 .minecraft/config/byg/backups/*.zip
 .minecraft/config/minihud
+.minecraft/config/fabric/indigo-renderer.properties
+.minecraft/config/roughlyenoughitems
+.minecraft/config/jade/usernamecache.json
