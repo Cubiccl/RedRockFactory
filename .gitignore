@@ -1,7 +1,10 @@
 
+natives/*
+
 .minecraft/usercache.json
 .minecraft/options.txt
 .minecraft/.fabric
+.minecraft/natives
 
 .minecraft/saves
 .minecraft/logs
