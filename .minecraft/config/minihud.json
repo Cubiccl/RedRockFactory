@@ -166,7 +166,7 @@
   },
   "InfoTypeToggles": {
     "infoBeeCount": false,
-    "infoBiome": false,
+    "infoBiome": true,
     "infoBiomeRegistryName": false,
     "infoBlockBreakSpeed": false,
     "infoBlockInChunk": false,
