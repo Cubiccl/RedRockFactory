@@ -11,7 +11,7 @@
 	   COMPATIBLE allows compat with Terralith and disabling biomes in banned_biomes.json5,
 	   but it requires Terrablender and is a bit unstable.
 	*/
-	"mode": "DEFAULT",
+	"mode": "COMPATIBLE",
 	// Whether to only change Vanilla biomes or not (DEFAULT mode only).
 	"onlyVanillaBiomes": false,
 	/* Whether to force Minecraft to generate Large Biomes or not.
