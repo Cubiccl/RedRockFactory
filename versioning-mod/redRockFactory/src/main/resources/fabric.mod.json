@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "red-rock-factory",
+  "version": "${version}",
+
+  "name": "Red Rock Factory",
+  "description": "This mod implements everything we need to glue the modpack together",
+  "authors": [
+    "CubiCCL, Darkxell_mc"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/Cubiccl/RedRockFactory"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.darkxellmc.redrockfactory.RedRockFactoryMod"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
