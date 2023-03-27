@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "wythers:volcano",
+          "parameters": {
+            "temperature": [
+              -1,
+              0.3
+            ],
+            "humidity": 0,
+            "continentalness": [
+              0,
+              1
+            ],
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "wythers:tepui",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              -1,
+              0
+            ],
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "wythers:danakil_desert",
+          "parameters": {
+            "temperature": [
+              0.3,
+              1
+            ],
+            "humidity": 0,
+            "continentalness": [
+              0,
+              1
+            ],
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}

@@ -4,6 +4,64 @@
 	   Here is an example: ["andesite_crags", "bayou", "snowy_thermal_taiga"]
 	*/
 	"banned_biomes": [
+	
+		/* Minecraft base biomes */
+		
+		"badlands",
+		"bamboo_jungle",
+		"beach",
+		"birch_forest",
+		"cold_ocean",
+		"dark_forest",
+		"deep_cold_ocean",
+		/* "deep_dark", */
+		"deep_frozen_ocean",
+		"deep_lukewarm_ocean",
+		"deep_ocean",
+		"desert",
+		/* "dripstone_caves", */
+		"eroded_badlands",
+		"flower_forest",
+		"forest",
+		"frozen_ocean",
+		"frozen_peaks",
+		"frozen_river",
+		"grove",
+		"ice_spikes",
+		"jagged_peaks",
+		"jungle",
+		"lukewarm_ocean",
+		/* "lush_caves", */
+		"mangrove_swamp",
+		"meadow",
+		"mushroom_fields",
+		"ocean",
+		"old_growth_birch_forest",
+		"old_growth_pine_taiga",
+		"old_growth_spruce_taiga",
+		"plains",
+		"river",
+		"savanna",
+		"savanna_plateau",
+		"snowy_beach",
+		"snowy_plains",
+		"snowy_slopes",
+		"snowy_taiga",
+		"sparse_jungle",
+		"stony_peaks",
+		"stony_shore",
+		"sunflower_plains",
+		"swamp",
+		"taiga",
+		"warm_ocean",
+		"windswept_forest",
+		"windswept_gravelly_hills",
+		"windswept_hills",
+		"windswept_savanna",
+		"wooded_badlands",
+		
+		/* WWOO Biomes not matching the pack*/
+		
 		"ancient_copper_beech_forest",
 		"ancient_emerald_beech_forest",
 		"ancient_golden_beech_forest",
