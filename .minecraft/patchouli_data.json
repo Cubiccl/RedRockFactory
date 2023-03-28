@@ -1,0 +1,24 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "modern_industrialization:book": {
+      "viewedEntries": [],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "extended_drawers:guide": {
+      "viewedEntries": [],
+      "bookmarks": [],
+      "completedManualQuests": []
+    },
+    "ad_astra:astrodux": {
+      "viewedEntries": [
+        "ad_astra:the_hot_planets/jet_suit",
+        "ad_astra:the_first_launch/basic_materials"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
+}
