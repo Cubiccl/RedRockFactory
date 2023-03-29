@@ -1,0 +1,626 @@
+{
+	id: "2F5AF51CCFEB62C1"
+	group: ""
+	order_index: 0
+	filename: "personal_equipement"
+	title: "Personal equipement"
+	icon: "avaritia:infinity_chestplate"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Getting started"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			description: ["To unleash your factory building skills, it's important to power up your defences, mobility and tool arsenal. Get started with a classic stone pickaxe."]
+			id: "6DB845EA99B0AE29"
+			tasks: [{
+				id: "370B1B9335356016"
+				type: "item"
+				item: {
+					id: "minecraft:stone_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "3422594AFBA355D0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Bouncing around"
+			x: 0.0d
+			y: -2.0d
+			description: ["The slime sling is a powerful tool to launch yourself up in the air! The slime boots will negate fall damage and allow you to bounce around."]
+			dependencies: ["6DB845EA99B0AE29"]
+			id: "4464DB938D507140"
+			tasks: [{
+				id: "458362A9FFE650D9"
+				type: "item"
+				item: {
+					id: "kibe:slime_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+			}]
+			rewards: [{
+				id: "473CAE63F4A807A0"
+				type: "item"
+				item: "kibe:slime_sling"
+			}]
+		}
+		{
+			title: "Iron armor"
+			x: -2.0d
+			y: 0.0d
+			description: ["It's not much, but it will protect you against some damage. It's just an armor, it doesn't allow you to fly... yet."]
+			dependencies: ["6DB845EA99B0AE29"]
+			id: "2031B052F171E86B"
+			tasks: [
+				{
+					id: "322CF72E1C6DCCA8"
+					type: "item"
+					item: {
+						id: "minecraft:iron_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2F31DC94841EAB3E"
+					type: "item"
+					item: {
+						id: "minecraft:iron_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "07B7C138ADFC1F5B"
+					type: "item"
+					item: {
+						id: "minecraft:iron_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3131B0C264AA8A3A"
+					type: "item"
+					item: {
+						id: "minecraft:iron_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Crude flight"
+			x: 0.0d
+			y: -3.5d
+			description: ["Elytras are a great way to move around. In this pack, you can equip them in the cape trinket slot, at the same time as a chestplate! They still require rockets to operate."]
+			dependencies: ["4464DB938D507140"]
+			id: "0C53D286FA5850FF"
+			tasks: [{
+				id: "620B8167FD24BB70"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4DA5A81450EB8DF5"
+				type: "item"
+				item: "minecraft:firework_rocket"
+				count: 64
+			}]
+		}
+		{
+			title: "Icarus"
+			x: 0.0d
+			y: -5.0d
+			description: ["Icarus wings are a straight upgrade to elytras. Infinite flight with 360° control, these are your best tool to dominate the skies!"]
+			dependencies: ["0C53D286FA5850FF"]
+			id: "72BB975CB7B87388"
+			tasks: [{
+				id: "5CB581C042BB208B"
+				type: "item"
+				item: "icarus:flandres_wings"
+			}]
+		}
+		{
+			title: "Creative flight"
+			x: 0.0d
+			y: -6.5d
+			description: ["The angel ring is the pinnacle of mobility, allowing zero compromise creative flight."]
+			dependencies: ["72BB975CB7B87388"]
+			id: "0DB7DF10240F2904"
+			tasks: [{
+				id: "09F2CA0866D29326"
+				type: "item"
+				item: {
+					id: "kibe:angel_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Reaching further"
+			x: 2.0d
+			y: 4.5d
+			description: ["The extando grip greatly increases your block placement and minning reach. It may prove very useful to build large structures. You're building a factory, right?"]
+			dependencies: ["7C78035421BE7465"]
+			id: "2EE46BD1347DFFBC"
+			tasks: [{
+				id: "14F355071F85E3FA"
+				type: "item"
+				item: {
+					id: "create:extendo_grip"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			description: ["The heart canister belt is a great way to avoid dying. It can multiply your health by five. You'll just need to slot it with heart canisters and equip it in your belt slot."]
+			dependencies: ["2031B052F171E86B"]
+			id: "6B9471060C96D161"
+			tasks: [{
+				id: "0F463F220A848B47"
+				type: "item"
+				item: "heartytrinkets:canister_belt"
+				match_nbt: false
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			dependencies: ["6B9471060C96D161"]
+			id: "22BF4A22AE117AD9"
+			tasks: [{
+				id: "02948C4EC0A3265A"
+				type: "item"
+				item: "heartytrinkets:orange_heart_canister"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.0d
+			dependencies: ["6B9471060C96D161"]
+			id: "0744459441EEB363"
+			tasks: [{
+				id: "093F5C5EC38B3012"
+				type: "item"
+				item: "heartytrinkets:red_heart_canister"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			dependencies: ["6B9471060C96D161"]
+			id: "046912AAFE898112"
+			tasks: [{
+				id: "42D2F85F8B8D10F1"
+				type: "item"
+				item: "heartytrinkets:green_heart_canister"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			dependencies: ["6B9471060C96D161"]
+			id: "5CF9F52A5F03E1E7"
+			tasks: [{
+				id: "175A8F7B26880ECE"
+				type: "item"
+				item: "heartytrinkets:blue_heart_canister"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			description: ["The magnet is an amulet trinket you may find useful. It pulls in nearby dropped items to you."]
+			dependencies: ["2031B052F171E86B"]
+			id: "2F9909AF3B7E04BB"
+			tasks: [{
+				id: "68889FFE8E9980D5"
+				type: "item"
+				item: "kibe:magnet"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			subtitle: "A must have for any serious man with serious business! You may equip these in the glasses slot to have them on while wearing a helmet."
+			dependencies: ["6DB845EA99B0AE29"]
+			id: "7C78035421BE7465"
+			tasks: [{
+				id: "36665DF813D5FB34"
+				type: "item"
+				item: "create:goggles"
+			}]
+		}
+		{
+			title: "Cheating death"
+			x: -2.0d
+			y: 4.5d
+			description: ["These can be worn in the charm trinket slot, offering permanent protection. You should be near invincible now!"]
+			dependencies: ["6B9471060C96D161"]
+			id: "7A681D51CB1ED982"
+			tasks: [{
+				id: "6B23EC32FF7501FE"
+				type: "item"
+				item: "minecraft:totem_of_undying"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			description: ["Wearing this magical ring grants fire immunity. This is a ring, and can be put in any of the two ring trinket slots."]
+			dependencies: ["2031B052F171E86B"]
+			id: "6B180A2DDEEF6294"
+			tasks: [{
+				id: "363B13D796D1373B"
+				type: "item"
+				item: {
+					id: "kibe:magma_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			description: ["A bit niche, but this would prove handy if you were to build underwater."]
+			dependencies: ["2031B052F171E86B"]
+			id: "01DEAE1D69822308"
+			tasks: [{
+				id: "7B3726C9374BFB01"
+				type: "item"
+				item: {
+					id: "kibe:water_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Carrying the world"
+			x: 2.0d
+			y: 0.0d
+			description: ["This large backpack is a must have. There's a trinket slot for it, and you may bind a button (defaults to B) to open it quickly."]
+			dependencies: ["6DB845EA99B0AE29"]
+			id: "34A9DDA6A48FC70D"
+			tasks: [{
+				id: "240C22EF809CB5D3"
+				type: "item"
+				item: {
+					id: "travelersbackpack:standard"
+					Count: 1b
+					tag: { }
+				}
+				match_nbt: false
+			}]
+		}
+		{
+			title: "Ultimate backpack"
+			x: 6.5d
+			y: 0.0d
+			description: ["You may use the backpack you have to create a themed variant, which gives you a buff while you wear it. They aren't larger though..."]
+			dependencies: ["34A9DDA6A48FC70D"]
+			id: "55F40A8A16C53413"
+			tasks: [{
+				id: "3DB84347E83E970D"
+				type: "item"
+				item: {
+					id: "travelersbackpack:dragon"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			description: ["You can store up to two different fluids in your backpack. This is a great alternative to buckets."]
+			dependencies: ["34A9DDA6A48FC70D"]
+			id: "4E6A54F4C1687089"
+			tasks: [{
+				id: "7CEE32B6CC327CD0"
+				type: "item"
+				item: "travelersbackpack:backpack_tank"
+			}]
+		}
+		{
+			title: "Placing liquids"
+			x: 5.0d
+			y: 0.0d
+			description: ["A hose allows you to place liquid directly from your backpack in the world, or in machines."]
+			dependencies: ["4E6A54F4C1687089"]
+			id: "3B0BAE9E2CE81EA8"
+			tasks: [{
+				id: "07503799A09BCA17"
+				type: "item"
+				item: "travelersbackpack:hose"
+			}]
+		}
+		{
+			title: "Space suit"
+			x: -4.5d
+			y: 0.0d
+			description: ["You'll need something to whistand the void, to survive in the emptyness of space..."]
+			dependencies: ["2031B052F171E86B"]
+			id: "56188FD5AD508B8C"
+			tasks: [
+				{
+					id: "3B6C178C1B057DB1"
+					type: "item"
+					item: {
+						id: "ad_astra:space_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6CA395DF16BEC82E"
+					type: "item"
+					item: {
+						id: "ad_astra:space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "5F48459AD008C9E1"
+					type: "item"
+					item: {
+						id: "ad_astra:space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "672A5CFB37E4DD24"
+					type: "item"
+					item: {
+						id: "ad_astra:space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Diamond armor"
+			x: -4.5d
+			y: -2.0d
+			description: ["A classic upgrade"]
+			dependencies: ["2031B052F171E86B"]
+			id: "4B9CEE0EEDE239A0"
+			tasks: [
+				{
+					id: "0DF258A382339423"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7395C97939B51A74"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "350239E9E00B06B4"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6A7975A254E99A86"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Netherite space suit"
+			x: -6.5d
+			y: 0.0d
+			description: ["You'll need to upgrade your space suit with materials straight from hell to visit the hotest of planets."]
+			dependencies: [
+				"45C76A753196CB13"
+				"56188FD5AD508B8C"
+			]
+			id: "2A395700BFEBAE47"
+			tasks: [
+				{
+					id: "6D7D1B57AF1BB405"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "78E3B2B8BDBA1F59"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "26641B1A1139B162"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2BB0DA88BCAC7842"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Netherite armor"
+			x: -6.5d
+			y: -2.0d
+			dependencies: ["4B9CEE0EEDE239A0"]
+			id: "45C76A753196CB13"
+			tasks: [
+				{
+					id: "2CD826E19AF11902"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "071C32A567763024"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "676B862BFAA2A5EE"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1A93F951A4A65725"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Infinite protection"
+			x: -8.5d
+			y: 0.0d
+			dependencies: ["2A395700BFEBAE47"]
+			id: "55B70EFD8314B944"
+			tasks: [
+				{
+					id: "21E3B0AA950D0614"
+					type: "item"
+					item: "avaritia:infinity_helmet"
+				}
+				{
+					id: "4BFA8F8D3FA82F93"
+					type: "item"
+					item: "avaritia:infinity_chestplate"
+				}
+				{
+					id: "2FB7EC8D8394A76F"
+					type: "item"
+					item: "avaritia:infinity_leggings"
+				}
+				{
+					id: "2117DFA1AE92A9A6"
+					type: "item"
+					item: "avaritia:infinity_boots"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}
