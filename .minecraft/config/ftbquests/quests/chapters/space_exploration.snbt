@@ -1,0 +1,285 @@
+{
+	id: "575B225A0C06B130"
+	group: ""
+	order_index: 4
+	filename: "space_exploration"
+	title: "Space exploration"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Getting started"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			description: ["You will need these basic materials to start your journey in outer space. Many materials in this modpack come from other planets, and later some machines will need to be placed in orbit."]
+			id: "17098713EC619A75"
+			tasks: [
+				{
+					id: "5DC0B2D8F93C3567"
+					type: "item"
+					item: "ad_astra:iron_plate"
+				}
+				{
+					id: "2D77F0BB03EA559A"
+					type: "item"
+					item: "ad_astra:steel_plate"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			description: ["The nasa workbench is needed to create rockets."]
+			dependencies: ["17098713EC619A75"]
+			id: "01D35E73FB52FAF0"
+			tasks: [{
+				id: "638468A8F7D34A04"
+				type: "item"
+				item: "ad_astra:nasa_workbench"
+			}]
+		}
+		{
+			title: "Gathering fuel"
+			x: -2.0d
+			y: -2.0d
+			description: ["Using bio ethanol, you should stockpile on some rocket fuel. Be sure to make enough to power your rocket for the trip back..."]
+			dependencies: ["01D35E73FB52FAF0"]
+			id: "4669F8201B999C70"
+			tasks: [{
+				id: "501C928FD37EDD60"
+				type: "item"
+				item: "ad_astra:fuel_bucket"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["01D35E73FB52FAF0"]
+			id: "7D21ACAFE56F43B3"
+			tasks: [{
+				id: "0A74A55293004B25"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_1_rocket"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: [
+				"7D21ACAFE56F43B3"
+				"52009B555C981EEC"
+			]
+			id: "74A9B3BA7E6944FA"
+			tasks: [{
+				id: "308C9B47A656184C"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_2_rocket"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["74A9B3BA7E6944FA"]
+			id: "5E8D4FE67320AD55"
+			tasks: [{
+				id: "0C5E52D3EF2D8751"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_3_rocket"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			dependencies: ["5E8D4FE67320AD55"]
+			id: "75C0D5C8BBF85108"
+			tasks: [{
+				id: "21C2199815BBB346"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_4_rocket"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Bottling Oxygen"
+			x: 0.0d
+			y: -4.0d
+			description: ["Your first destination, the moon, has no breathable atmosphere. You may also fill up spare oxygen tanks."]
+			dependencies: ["01D35E73FB52FAF0"]
+			id: "65D03F65958AE9C3"
+			tasks: [{
+				id: "7CDF48C13C2D9FC8"
+				type: "item"
+				item: "ad_astra:oxygen_loader"
+			}]
+			rewards: [{
+				id: "3C1AB3C7F2C2D450"
+				type: "item"
+				item: {
+					id: "ad_astra:oxygen_tank"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Launch pads"
+			x: 2.0d
+			y: -4.0d
+			description: ["Launch pads are key elements for rocket takeoff. Make sure you make two and bring one with you for the return trip!"]
+			dependencies: ["01D35E73FB52FAF0"]
+			id: "67D16B0F71D3DD83"
+			tasks: [{
+				id: "74F65A7298D1F1BC"
+				type: "item"
+				item: "ad_astra:launch_pad"
+				count: 2L
+			}]
+		}
+		{
+			title: "To the moon!"
+			x: 4.0d
+			y: -2.0d
+			description: ["Ready for your first launch? Make sure you have a spare launchpad and 3 fuel buckets, as well as some oxygen."]
+			dependencies: [
+				"7D21ACAFE56F43B3"
+				"67D16B0F71D3DD83"
+			]
+			id: "248BDE288AC4424E"
+			tasks: [{
+				id: "743F9E465B8EBAE3"
+				type: "dimension"
+				icon: "ad_astra:moon_globe"
+				dimension: "ad_astra:moon"
+			}]
+		}
+		{
+			title: "Mining Desh"
+			x: 6.0d
+			y: -2.0d
+			description: ["Desh is a resource exclusive to the moon. You'll need to mine for it until you can automate its excavation."]
+			dependencies: ["248BDE288AC4424E"]
+			id: "52009B555C981EEC"
+			tasks: [{
+				id: "252C31E534D82ECA"
+				type: "item"
+				item: "ad_astra:raw_desh"
+			}]
+		}
+		{
+			title: "Visiting Mars"
+			x: 4.0d
+			y: 0.0d
+			description: ["Mars is your next destination. Once again, make sure you bring excess fuel and a launchpad for the return trip."]
+			dependencies: ["74A9B3BA7E6944FA"]
+			id: "2A258A94928E5A41"
+			tasks: [{
+				id: "7CFDA5FCA8D053D3"
+				type: "dimension"
+				icon: "ad_astra:mars_globe"
+				dimension: "ad_astra:mars"
+			}]
+		}
+		{
+			title: "Lunar outpost"
+			icon: "create:framed_glass"
+			x: 6.0d
+			y: -4.0d
+			description: ["Getting back to the overworld to refuel in oxygen is inconvenient at best, and you will need to spend time here to build a few machines. It's recommended you create an airtight outpost with basic commodities."]
+			dependencies: ["248BDE288AC4424E"]
+			id: "766E9EB0E3674564"
+			tasks: [
+				{
+					id: "2547FBA20E11BB17"
+					type: "item"
+					item: "ad_astra:airlock"
+				}
+				{
+					id: "3616A607F085C660"
+					type: "item"
+					item: "ad_astra:oxygen_distributor"
+				}
+				{
+					id: "22CF2174C44DBF09"
+					type: "item"
+					item: "ad_astra:solar_panel"
+				}
+			]
+		}
+		{
+			title: "Mining Ostrum"
+			x: 6.0d
+			y: 0.0d
+			description: ["Ostrum is a resource exculsively found on Mars."]
+			dependencies: ["2A258A94928E5A41"]
+			id: "61A8D75676F4513F"
+			tasks: [{
+				id: "23CBDF5FEA0E5574"
+				type: "item"
+				item: "ad_astra:raw_ostrum"
+			}]
+		}
+		{
+			icon: "ad_astra:desh_plate"
+			x: 8.0d
+			y: -2.0d
+			dependencies: ["52009B555C981EEC"]
+			id: "43D8C2EF6F9766D3"
+			tasks: [{
+				id: "262E78B0BDC4E557"
+				type: "checkmark"
+				title: "Automate Desh"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["5E8D4FE67320AD55"]
+			id: "1199165A6CD098F2"
+			tasks: [{
+				id: "271724388398925D"
+				type: "dimension"
+				icon: "ad_astra:venus_globe"
+				dimension: "ad_astra:venus"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["75C0D5C8BBF85108"]
+			id: "53C89F215E4D16D6"
+			tasks: [{
+				id: "7444D6F476F6B9E7"
+				type: "dimension"
+				icon: "ad_astra:mercury_globe"
+				dimension: "ad_astra:mercury"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

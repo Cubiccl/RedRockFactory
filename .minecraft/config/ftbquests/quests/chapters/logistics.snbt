@@ -1,0 +1,42 @@
+{
+	id: "2925C1926648DC99"
+	group: ""
+	order_index: 1
+	filename: "logistics"
+	title: "Logistics"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			description: ["This questline is all about logistics. Items storage, transportation... It starts simple, a few chests will be enough early."]
+			id: "223CDB27C666BBB2"
+			tasks: [{
+				id: "0BB6A01E4A5A58E5"
+				type: "item"
+				item: "minecraft:chest"
+			}]
+			rewards: [{
+				id: "2BAC67227DFA132D"
+				type: "item"
+				item: "minecraft:chest"
+				count: 5
+			}]
+		}
+		{
+			title: "Long distance items transfer"
+			x: -3.0d
+			y: 0.0d
+			description: ["Entangled chests allow you to connect two parts of your base remotely, without the need for complex logistics. It is key when harvesting resources on other planets to pull them back to your overworld base automatically."]
+			id: "57E91BF02EEE2D7A"
+			tasks: [{
+				id: "14FBA6FDAFC68B4B"
+				type: "item"
+				item: "kibe:entangled_chest"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

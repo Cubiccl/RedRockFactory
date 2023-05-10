@@ -1,0 +1,39 @@
+{
+	id: "38461F2A1FABCBAC"
+	group: ""
+	order_index: 2
+	filename: "energy"
+	title: "Energy"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Generating and processing energy"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			description: ["This questline is all about energy."]
+			id: "136061339B43B77E"
+			tasks: [{
+				id: "11318F6A77F95C78"
+				type: "checkmark"
+				title: "This questline is all about energy."
+			}]
+		}
+		{
+			title: "Rotational force"
+			x: 3.0d
+			y: 0.0d
+			description: ["Before you start fiddling around with electricity, kinetic energy will power your create machinery. The shaft is the most basic way to transfer torque, it's best you'd stockpile a few of them."]
+			dependencies: ["136061339B43B77E"]
+			id: "5450ECC58714AA2F"
+			tasks: [{
+				id: "045D6A2B094D436B"
+				type: "item"
+				item: "create:shaft"
+				count: 64L
+			}]
+		}
+	]
+	quest_links: [ ]
+}

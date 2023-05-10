@@ -1,0 +1,21 @@
+{
+	id: "221FCB26487195CD"
+	group: ""
+	order_index: 3
+	filename: "materials"
+	title: "Materials"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		shape: "square"
+		id: "084DB3A9E9FF3DF4"
+		tasks: [{
+			id: "2D0723553AC4D0B5"
+			type: "item"
+			item: "minecraft:raw_iron"
+		}]
+	}]
+	quest_links: [ ]
+}
